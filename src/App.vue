@@ -1,15 +1,24 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Inicio</router-link> |
-      <router-link to="/busqueda">Busqueda</router-link> |
-       <router-link to="/ventas">Ventas</router-link> |
-        <router-link to="/inventario">Inventario</router-link> |
-        <router-link to="/total">Total</router-link> |
-    </div>
-    <router-view/>
+  <div id="app" >
+    <Navbar />
+    
   </div>
 </template>
+
+
+<script>
+import Navbar from "@/components/Navbar.vue";
+
+
+export default {
+  name: "App",
+  components: {
+    Navbar,
+    
+  },
+};
+</script>
+
 
 <style lang="scss">
 #app {
@@ -31,5 +40,8 @@
       color: #42b983;
     }
   }
+
+
+  
 }
 </style>

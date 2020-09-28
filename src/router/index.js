@@ -26,11 +26,6 @@ const routes = [
     component: () => import(/* webpackChunkName: "inventario" */ '../views/Inventario.vue')
   },
   {
-    path: '/total',
-    name: 'Total',
-    component: () => import(/* webpackChunkName: "total" */ '../views/Total.vue')
-  },
-  {
     path: '*',
     name:"NotFound",
     component: () => import(/* webpackChunkName: "notfound" */ '../views/Notfound.vue'),

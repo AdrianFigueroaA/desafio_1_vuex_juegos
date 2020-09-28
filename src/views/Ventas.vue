@@ -1,8 +1,8 @@
 <template>
 <div>
   <h1>Ventas</h1>
-<b-table striped hover :items="historialDeVentas"></b-table>
- <pre>{{ historialDeVentas | pretty }}</pre>
+<b-table striped hover :items="historialDeVentas" style="background: red"></b-table>
+ 
 
 </div>
 </template>

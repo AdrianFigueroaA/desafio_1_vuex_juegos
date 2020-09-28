@@ -6,12 +6,9 @@
 
 <label for>Nombre Juego</label>
    <b-form-select v-model="nombre" :options="options" class="mb-3">
-      <!-- This slot appears above the options from 'options' prop -->
       <template v-slot:first>
         <b-form-select-option :value="null" disabled>-- Seleccione un Juego: --</b-form-select-option>
       </template>
-
-      <!-- These options will appear after the ones from 'options' prop -->
       <b-form-select-option v-for="(juego, clave) in juegos" :key="clave" :value="juego.nombre">{{ juego.nombre }}</b-form-select-option>
     
     </b-form-select>
